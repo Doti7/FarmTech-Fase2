@@ -1,0 +1,30 @@
+Teachable Machine — Relatório Final (Capítulo 2)
+Aluno: Bernardo Avelar | RM: 566867 | Fase 2 — Capítulo 2
+Tema: Classificação de objetos de cozinha (Talher, Panela, Geladeira)
+Objetivo e Metodologia (Resumo)
+Construção de um classificador de imagens no Teachable Machine (Imagem Padrão) para
+diferenciar três classes de objetos de cozinha. O processo seguiu: definição de classes, coleta
+de dados, divisão treino/teste, ajuste de hiperparâmetros (épocas, batch size, learning rate) e
+avaliação em conjunto de teste.
+Dados e Métricas
+• Treino: 90 imagens • Teste: 20 imagens (hold-out)
+• Acurácia no teste: 100% (20 acertos em 20)
+• Precisão global: 100% (sem falsos positivos nas 20 predições)
+Exploração de Parâmetros (Comparativo)
+Config Épocas Batch size Learning rate Acurácia (teste) Observações
+A (baseline) 30 16 0,001 100% (20/20) Treino rápido; alta performance inicial.
+B (final) 50 32 0,001 100% (20/20) Escolha final; resultado estável.
+C (robustez) 100 32 0,0005 100% (20/20) Treino mais longo; sem ganho adicional.
+Justificativa Técnica dos Resultados
+As classes escolhidas apresentam separabilidade visual (formas e texturas distintas), o que
+facilita a aprendizagem do extrator do TM. A configuração de iluminação e enquadramento
+relativamente consistentes também reduz ruído. O conjunto de teste (20 imagens) é pequeno,
+portanto 100% pode refletir baixa variabilidade.
+Análise Crítica e Sugestões de Melhoria
+• Aumentar diversidade: ângulos, distâncias, iluminação, fundos e oclusões.
+• Balancear classes e ampliar amostras (³100 por classe).
+• Aplicar data augmentation: rotações leves, brilho/contraste e recortes.
+• Padronizar distância e enquadramento para reduzir viés de escala.
+• Repetir avaliação com outro hold-out ou k-fold externo ao TM.
+Observação: as probabilidades de saída exibidas pelo TM representam confiança por classe e
+não equivalem diretamente à acurácia; a acurácia foi medida no conjunto de teste separado.
