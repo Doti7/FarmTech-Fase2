@@ -1,0 +1,21 @@
+Resumo — Uso de VANTs em Agricultura de Precisão
+Este resumo apresenta, de forma concisa, os pontos centrais do capítulo sobre Veículos Aéreos
+Não Tripulados (VANTs) aplicados à agricultura de precisão. VANTs integram aeronave, piloto
+automático e estação de controle, possibilitando voos planejados e aquisição de imagens
+georreferenciadas.
+Plataformas e componentes: modelos de asa fixa (maior autonomia e cobertura) e multirrotores
+(decolagem vertical, melhor operação em áreas pequenas). Sensores de navegação (GPS/IMU) e
+piloto automático estabilizam o voo. A escolha depende de área, vento, pista e carga útil.
+Sensores e produtos: câmeras RGB, NIR/multiespectrais, hiperespectrais e térmicas. Geram
+mosaicos e índices de vegetação (ex.: NDVI), mapas de vigor, estresse hídrico/nutricional e
+temperatura do dossel. Hiperespectrais ampliam o diagnóstico bioquímico (pigmentos, água, N),
+exigindo maior processamento.
+Fluxo operacional: (1) planejamento (altitude, sobreposição), (2) voo/aquisição, (3)
+georreferenciamento, (4) mosaico, (5) análise em SIG, (6) zonas de manejo, (7) relatório. Altitude
+define a resolução (GSD); sobreposição impacta qualidade do mosaico e modelos de elevação.
+Benefícios e limites: imagens frequentes e de alta resolução aceleram diagnóstico e decisão (ex.:
+adubação em taxa variável). Desafios: autonomia/carga, vento, custo/complexidade de sensores
+avançados, capacitação e conformidade regulatória.
+Conclusão: VANTs já são ferramentas estratégicas na agricultura de precisão e tendem a ganhar
+espaço com a evolução de sensores, softwares e integração com GIS, fortalecendo
+monitoramento e tomada de decisão no campo.
